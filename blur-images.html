@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Change images</title>
+        <style>
+            body {margin: 10px;}
+            img {margin: 10px;}
+        </style>
+         <script>
+            window.onload = init;
+            function init () {
+                var image = document.getElementById("zero");
+                image.onclick = showAnswer;
+            }
+            function showAnswer() {
+                var image = document.getElementById("zero");
+                image.src = "zero.jpg";
+            }
+            </script>
+    </head>
+    <body>
+        <h1>Click on images!</h1>
+       <img id = "zero" src="zeroblur.jpg">
+       <img id = "one" src="oneblur.jpg">
+       <img id = "two" src="twoblur.jpg">
+       <img id = "three" src="threeblur.jpg">
+       <img id = "four" src="fourblur.jpg">
+       <img id = "five" src="fiveblur.jpg">
+    </body>
+</html>
