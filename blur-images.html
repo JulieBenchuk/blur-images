@@ -20,6 +20,12 @@
                 var name = image.id;
                 name = name + ".jpg";
                 image.src = name;
+                setTimeout(reblur, 2000, image);
+            }
+            function reblur(image) {
+                var reName = image.id;
+                reName = reName + "blur.jpg";
+                image.src = reName;
             }
             </script>
     </head>
